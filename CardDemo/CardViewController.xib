@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewController" customModule="CardDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="arrow" destination="Lwf-FZ-egw" id="DlJ-9D-YSJ"/>
+                <outlet property="titleBar" destination="9gw-sA-VZI" id="5YC-1c-pWc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-sA-VZI" userLabel="TitleBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwf-FZ-egw">
+                            <rect key="frame" x="20" y="14.5" width="22" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CardViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmO-7l-Vdf">
+                            <rect key="frame" x="113" y="20" width="149.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Lwf-FZ-egw" firstAttribute="leading" secondItem="9gw-sA-VZI" secondAttribute="leading" constant="20" id="40U-KE-fnC"/>
+                        <constraint firstItem="nmO-7l-Vdf" firstAttribute="centerY" secondItem="9gw-sA-VZI" secondAttribute="centerY" id="9HY-1M-cT6"/>
+                        <constraint firstItem="nmO-7l-Vdf" firstAttribute="centerX" secondItem="9gw-sA-VZI" secondAttribute="centerX" id="Kvc-hf-cEr"/>
+                        <constraint firstAttribute="height" constant="60" id="fN9-Il-uqn"/>
+                        <constraint firstItem="Lwf-FZ-egw" firstAttribute="centerY" secondItem="9gw-sA-VZI" secondAttribute="centerY" id="sCc-io-0uw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6J-6n-Yh2" userLabel="Content">
+                    <rect key="frame" x="0.0" y="60" width="375" height="340"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the center of the card content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prg-uK-ngP">
+                            <rect key="frame" x="47" y="159.5" width="282.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96038784160000001" green="0.89885951630000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Prg-uK-ngP" firstAttribute="centerY" secondItem="j6J-6n-Yh2" secondAttribute="centerY" id="JEV-Fb-aMc"/>
+                        <constraint firstItem="Prg-uK-ngP" firstAttribute="centerX" secondItem="j6J-6n-Yh2" secondAttribute="centerX" id="dMw-Sv-QD0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="j6J-6n-Yh2" firstAttribute="top" secondItem="9gw-sA-VZI" secondAttribute="bottom" id="86A-YD-3Ac"/>
+                <constraint firstAttribute="bottom" secondItem="j6J-6n-Yh2" secondAttribute="bottom" id="NWk-4k-Se4"/>
+                <constraint firstItem="j6J-6n-Yh2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xud-yI-mP2"/>
+                <constraint firstItem="9gw-sA-VZI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zj3-eb-NVz"/>
+                <constraint firstItem="9gw-sA-VZI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qhi-Lf-nqW"/>
+                <constraint firstAttribute="trailing" secondItem="9gw-sA-VZI" secondAttribute="trailing" id="v2B-4i-7VV"/>
+                <constraint firstAttribute="trailing" secondItem="j6J-6n-Yh2" secondAttribute="trailing" id="zXu-qt-COP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
